@@ -1,4 +1,11 @@
 const animatedElements = document.querySelectorAll('[data-animate]');
+const backToTopButton = document.querySelector('.floating-button--top');
+
+const toggleBackToTopVisibility = () => {
+  if (!backToTopButton) return;
+  const shouldShow = window.scrollY > window.innerHeight * 0.15;
+  backToTopButton.classList.toggle('is-visible', shouldShow);
+};
 const observer = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
@@ -23,6 +30,7 @@ window.addEventListener('scroll', () => {
   scrollTimeout = setTimeout(() => {
     document.body.classList.remove('scrolling');
   }, 200);
+  toggleBackToTopVisibility();
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -30,4 +38,5 @@ document.addEventListener('DOMContentLoaded', () => {
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+  toggleBackToTopVisibility();
 });
