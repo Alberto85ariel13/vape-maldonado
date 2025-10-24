@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Vape Maldonado icono</title>
+  <desc id="desc">Ilustración minimalista de un vaporizador en colores pastel</desc>
+  <rect width="128" height="128" rx="20" fill="#C4F4EB"/>
+  <g transform="translate(32 20)">
+    <rect x="22" width="20" height="20" rx="8" fill="#E8C16D" stroke="#5B3B71" stroke-width="4"/>
+    <rect y="12" width="64" height="84" rx="18" fill="#E8C16D" stroke="#5B3B71" stroke-width="4"/>
+    <rect x="10" y="26" width="44" height="56" rx="12" fill="#9D8CFB" stroke="#5B3B71" stroke-width="4"/>
+    <circle cx="32" cy="54" r="12" fill="#F4E7C5" stroke="#5B3B71" stroke-width="4"/>
+  </g>
+  <g fill="none" stroke="#5B3B71" stroke-width="4" stroke-linecap="round">
+    <path d="M22 32c2 4 2 6 0 10"/>
+    <path d="M100 90c0 3-1 4-4 6"/>
+    <path d="M100 70c3 5 3 7 0 12"/>
+  </g>
+</svg>
